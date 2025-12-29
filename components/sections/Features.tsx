@@ -2,144 +2,115 @@
 
 import { Card } from "@/components/ui/card";
 
-const apps = [
-  "Basecamp",
-  "Facebook",
-  "YouTube",
-  "LinkedIn",
-  "X",
-  "Linear",
-  "Slack",
-  "Telegram",
-  "Github",
-  "Obsidian",
-  "JIRA",
-  "Figma",
-  "Notion",
-  "Zoom",
-  "Wordpress",
-  "IntellijIdea",
-  "VIM",
-  "SublimeText",
-  "Discord",
-  "googledocs",
-  "googleslides",
-  "Gmail",
-  "Asana",
-  "Trello",
-];
-
 const features = [
   {
-    title: "100+ Languages",
-    description: "It can translate them all to English, too.",
+    title: "Global Hotkey",
+    description: "Create a note anywhere with a global keyboard shortcut.",
     content: (
-      <div className="absolute inset-0 flex items-center justify-center">
-        <div className="text-4xl font-bold text-white/20">100+</div>
-      </div>
-    ),
-  },
-  {
-    title: "Use Custom Vocabulary",
-    description: "Allows you phrases, names, links, or acronyms.",
-    content: (
-      <div className="absolute inset-0 flex flex-wrap items-center justify-center gap-2 p-4">
-        {["SaaS", "ARR", "Kubernetes", "Docker", "GPT-4"].map((word) => (
-          <div
-            key={word}
-            className="rounded-lg border border-white/20 bg-white/5 px-3 py-1 text-sm text-white/60"
-          >
-            {word}
+      <div className="flex items-center justify-center h-full p-6">
+        <div className="flex flex-col items-center gap-4">
+          <div className="flex items-center gap-2 px-4 py-3 rounded-lg bg-brand-gray border-2 border-brand-green/20 shadow-md">
+            <kbd className="px-3 py-1.5 text-sm font-semibold text-brand-text bg-white rounded border border-brand-text/10 shadow-sm">
+              ⌘
+            </kbd>
+            <span className="text-brand-text/40 text-sm font-medium">+</span>
+            <kbd className="px-3 py-1.5 text-sm font-semibold text-brand-text bg-white rounded border border-brand-text/10 shadow-sm">
+              ⇧
+            </kbd>
+            <span className="text-brand-text/40 text-sm font-medium">+</span>
+            <kbd className="px-3 py-1.5 text-sm font-semibold text-white bg-brand-green rounded border border-brand-green shadow-sm">
+              N
+            </kbd>
           </div>
-        ))}
+          <div className="text-brand-text/50 text-sm font-medium">Press anywhere, anytime</div>
+        </div>
       </div>
     ),
   },
   {
-    title: "Private & Secure",
-    description: "Everything stays on your device.",
+    title: "AI Organization",
+    description: "AI automatically organizes your notes into appropriate folders.",
     content: (
-      <div className="absolute inset-0 flex items-center justify-center">
-        <svg
-          aria-hidden="true"
-          className="pointer-events-none h-full w-full fill-neutral-400/80"
-        >
-          <defs>
-            <pattern
-              id="dots"
-              width="20"
-              height="20"
-              patternUnits="userSpaceOnUse"
-              patternContentUnits="userSpaceOnUse"
-              x="0"
-              y="0"
-            >
-              <circle id="pattern-circle" cx="1" cy="1" r="1" />
-            </pattern>
-          </defs>
-          <rect width="100%" height="100%" strokeWidth="0" fill="url(#dots)" />
-        </svg>
+      <div className="flex items-center justify-center h-full p-6">
+        <div className="flex flex-col gap-3 w-full max-w-xs">
+          <div className="flex items-center gap-3 text-brand-text/80 bg-white p-3 rounded-lg">
+            <svg className="w-5 h-5 text-brand-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
+            </svg>
+            <span className="text-sm font-medium">Work</span>
+          </div>
+          <div className="flex items-center gap-3 text-brand-text/80 bg-white p-3 rounded-lg ml-4">
+            <svg className="w-5 h-5 text-brand-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
+            </svg>
+            <span className="text-sm font-medium">Personal</span>
+          </div>
+          <div className="flex items-center gap-3 text-brand-text/80 bg-white p-3 rounded-lg ml-4">
+            <svg className="w-5 h-5 text-brand-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
+            </svg>
+            <span className="text-sm font-medium">Projects</span>
+          </div>
+          <div className="absolute top-4 right-4">
+            <svg className="w-6 h-6 text-brand-green/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+            </svg>
+          </div>
+        </div>
       </div>
     ),
   },
   {
-    title: "Offline First",
-    description: "Everything happens on your device, no WiFi needed.",
+    title: "Automatic Task Generation",
+    description: "Automatically generate tasks from your note content.",
     content: (
-      <div className="absolute bottom-0 right-0 opacity-60">
-        <svg
-          height="250"
-          viewBox="0 0 167 129"
-          fill="none"
-          color="currentColor"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M141.48 135.642C142.186 136.4 142.735 137.291 143.094 138.263C143.453 139.234 143.615 140.267 143.572 141.302C143.529 142.337 143.281 143.354 142.842 144.292C142.403 145.23 141.782 146.072 141.016 146.769C140.249 147.466 139.352 148.003 138.376 148.351C137.4 148.698 136.365 148.848 135.33 148.793C134.296 148.737 133.283 148.476 132.35 148.026C131.417 147.576 130.582 146.946 129.895 146.171L96.4034 109.333C90.7366 107.198 84.6282 106.503 78.6267 107.311C72.6251 108.12 66.9182 110.406 62.0184 113.964C60.3402 115.188 58.2448 115.694 56.1932 115.372C54.1416 115.051 52.3018 113.927 51.0786 112.249C49.8554 110.571 49.349 108.475 49.6707 106.424C49.9925 104.372 51.116 102.532 52.7942 101.309C60.7803 95.4765 70.27 92.0537 80.1405 91.4455L67.5242 77.5637C57.9951 79.8796 49.0801 84.2303 41.3913 90.317C39.7604 91.5634 37.7053 92.1193 35.6685 91.8651C33.6317 91.6109 31.7762 90.5669 30.5017 88.9579C29.2272 87.349 28.6356 85.3038 28.8544 83.2629C29.0732 81.222 30.0848 79.3487 31.6714 78.0464C38.9378 72.298 47.1072 67.7944 55.8472 64.719L44.5551 52.3245C35.9284 56.0064 27.8712 60.9005 20.6272 66.8587C19.0199 68.1762 16.9551 68.8012 14.8869 68.5963C12.8188 68.3914 10.9168 67.3733 9.5993 65.766C8.28181 64.1588 7.65678 62.0939 7.86169 60.0258C8.06661 57.9577 9.08469 56.0557 10.692 54.7382C17.6979 48.985 25.3622 44.0842 33.524 40.1387L25.5198 31.3582C24.8139 30.6 24.2656 29.7092 23.9066 28.7375C23.5475 27.7658 23.3849 26.7325 23.4281 25.6975C23.4714 24.6625 23.7196 23.6464 24.1585 22.708C24.5973 21.7697 25.218 20.9278 25.9847 20.2311C26.7513 19.5344 27.6486 18.9968 28.6245 18.6494C29.6004 18.302 30.6356 18.1518 31.67 18.2075C32.7044 18.2631 33.7175 18.5235 34.6505 18.9736C35.5835 19.4236 36.4179 20.0544 37.1054 20.8293L141.48 135.642Z"
-            stroke="url(#paint0_radial)"
-            strokeWidth="4"
-          />
-          <defs>
-            <radialGradient
-              id="paint0_radial"
-              cx="0"
-              cy="0"
-              r="1"
-              gradientUnits="userSpaceOnUse"
-              gradientTransform="translate(83.0002 18.0001) rotate(89.7827) scale(130.805 151.574)"
-            >
-              <stop stopColor="currentColor" stopOpacity="0.43" />
-              <stop offset="1" stopColor="currentColor" stopOpacity="0" />
-            </radialGradient>
-          </defs>
-        </svg>
-      </div>
-    ),
-  },
-  {
-    title: "Use with any app",
-    description: "Works anywhere you can type or paste text. No need to switch apps.",
-    content: (
-      <div className="absolute inset-0 flex h-full w-full flex-col items-center justify-center gap-4 overflow-hidden rounded-lg">
-        <div className="group flex overflow-hidden p-2 [--duration:40s] [gap:var(--gap)] flex-row relative [--gap:3rem]">
-          {[...Array(4)].map((_, i) => (
-            <div
-              key={i}
-              className="flex shrink-0 justify-around [gap:var(--gap)] animate-marquee flex-row"
-              style={{
-                animationDirection: i % 2 === 0 ? "normal" : "reverse",
-              }}
-            >
-              {apps.map((app, idx) => (
-                <div
-                  key={`${app}-${i}-${idx}`}
-                  className="h-8 w-8 rounded bg-white/10 flex items-center justify-center text-xs text-white/60"
-                >
-                  {app[0]}
-                </div>
-              ))}
+      <div className="flex items-center justify-center h-full p-6">
+        <div className="flex flex-col gap-3 w-full max-w-xs">
+          <div className="flex items-center gap-3 text-brand-text/80 bg-white p-3 rounded-lg border border-brand-gray">
+            <div className="w-5 h-5 rounded border-2 border-brand-green bg-brand-green/10 flex items-center justify-center">
+              <svg className="w-3 h-3 text-brand-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+              </svg>
             </div>
-          ))}
+            <span className="text-sm font-medium">Review project proposal</span>
+          </div>
+          <div className="flex items-center gap-3 text-brand-text/80 bg-white p-3 rounded-lg border border-brand-gray">
+            <div className="w-5 h-5 rounded border-2 border-brand-green bg-brand-green/10"></div>
+            <span className="text-sm font-medium">Schedule team meeting</span>
+          </div>
+          <div className="flex items-center gap-3 text-brand-text/80 bg-white p-3 rounded-lg border border-brand-gray">
+            <div className="w-5 h-5 rounded border-2 border-brand-green bg-brand-green/10"></div>
+            <span className="text-sm font-medium">Update documentation</span>
+          </div>
+          <div className="absolute top-4 right-4 animate-pulse">
+            <svg className="w-5 h-5 text-brand-green/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    ),
+  },
+  {
+    title: "AI Search Assistant",
+    description: "Find past notes by asking questions in natural language.",
+    content: (
+      <div className="flex items-center justify-center h-full p-6">
+        <div className="flex flex-col gap-3 w-full max-w-xs">
+          <div className="relative">
+            <input
+              type="text"
+              placeholder="What did I write about..."
+              className="w-full px-4 py-3 rounded-lg bg-white border-2 border-brand-gray text-brand-text text-sm placeholder-brand-text/40 focus:border-brand-green focus:outline-none"
+              readOnly
+            />
+            <div className="absolute right-3 top-1/2 -translate-y-1/2">
+              <svg className="w-5 h-5 text-brand-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+              </svg>
+            </div>
+          </div>
+          <div className="text-brand-text/50 text-xs text-center font-medium">Ask anything, find everything</div>
         </div>
       </div>
     ),
@@ -148,39 +119,29 @@ const features = [
 
 export function Features() {
   return (
-    <section id="features" className="py-24">
+    <section id="features" className="py-24 bg-brand-background">
       <div className="flex w-full items-center justify-center mb-16">
-        <div className="h-[1px] w-full bg-gradient-to-l from-white/20 via-white/10 to-white/0" />
-        <div className="relative w-56 rounded-full px-4 py-1 text-center text-sm leading-6 text-white shadow-2xl ring-1 ring-white/50 bg-black">
+        <div className="h-[1px] w-full bg-gradient-to-l from-brand-text/20 via-brand-text/10 to-transparent" />
+        <div className="relative w-56 rounded-full px-4 py-1 text-center text-sm leading-6 text-brand-text shadow-lg ring-1 ring-brand-text/20 bg-brand-beige">
           Features
         </div>
-        <div className="h-[1px] w-full bg-gradient-to-r from-white/20 to-white/0" />
+        <div className="h-[1px] w-full bg-gradient-to-r from-brand-text/20 to-transparent" />
       </div>
-      <div className="flex justify-center h-min-screen items-center">
-        <div className="grid w-full auto-rows-[12rem] grid-cols-1 gap-4 p-8 max-w-7xl lg:grid-cols-3">
+      <div className="flex justify-center items-center px-4">
+        <div className="grid w-full grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl">
           {features.map((feature, index) => (
             <Card
               key={feature.title}
-              className={`group relative col-span-1 flex flex-col justify-between overflow-hidden rounded-xl bg-transparent backdrop-blur-md border border-white/10 hover:border-white/20 transition-all ${
-                index === 0
-                  ? "lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3"
-                  : index === 1
-                  ? "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3"
-                  : index === 2
-                  ? "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4"
-                  : index === 3
-                  ? "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2"
-                  : "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4"
-              }`}
+              className="group relative flex flex-col h-[400px] overflow-hidden rounded-xl bg-brand-card border-2 border-brand-gray hover:border-brand-green transition-all duration-300 hover:shadow-xl"
             >
-              <div className="pointer-events-none relative h-full">
+              <div className="relative h-full">
                 {feature.content}
               </div>
-              <div className="pointer-events-none z-10 flex transform-gpu flex-col gap-1 p-6 transition-all duration-300 group-hover:-translate-y-2">
-                <h3 className="text-xl font-semibold text-neutral-300">
+              <div className="z-10 flex flex-col gap-2 p-6 bg-brand-card border-t border-brand-gray">
+                <h3 className="text-xl font-semibold text-brand-text">
                   {feature.title}
                 </h3>
-                <p className="max-w-lg text-neutral-400">{feature.description}</p>
+                <p className="text-brand-text/70">{feature.description}</p>
               </div>
             </Card>
           ))}

@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Host Grotesk', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'system-ui', 'sans-serif'],
+      },
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
@@ -49,6 +52,14 @@ const config: Config = {
           "3": "hsl(var(--chart-3))",
           "4": "hsl(var(--chart-4))",
           "5": "hsl(var(--chart-5))",
+        },
+        brand: {
+          gray: "#EFEFD7",
+          beige: "#FFFFE9",
+          green: "#00512E",
+          background: "#FFFFF4",
+          text: "#161D11",
+          card: "#F8F8E3",
         },
       },
       borderRadius: {

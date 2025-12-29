@@ -3,19 +3,17 @@ import { Hero } from "@/components/sections/Hero";
 import { Features } from "@/components/sections/Features";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { Pricing } from "@/components/sections/Pricing";
-import { UserCases } from "@/components/sections/UserCases";
 import { FAQ } from "@/components/sections/FAQ";
 import { Footer } from "@/components/sections/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black">
+    <main className="min-h-screen bg-brand-background">
       <Header />
       <Hero />
       <Features />
       <Testimonials />
       <Pricing />
-      <UserCases />
       <FAQ />
       <Footer />
     </main>
