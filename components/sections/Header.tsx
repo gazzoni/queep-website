@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 export function Header() {
@@ -6,6 +7,14 @@ export function Header() {
     <header className="fixed top-0 z-50 w-full border-b border-brand-text/10 bg-brand-background/80 backdrop-blur-md">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center space-x-2">
+          <Image
+            src="/logo.png"
+            alt="Queep Logo"
+            width={32}
+            height={32}
+            className="h-8 w-8 object-contain"
+            priority
+          />
           <span className="text-2xl font-bold text-brand-text">Queep</span>
         </Link>
         <nav className="hidden md:flex items-center space-x-8">
@@ -20,7 +29,10 @@ export function Header() {
           </Link>
         </nav>
         <Link href="#pricing">
-          <Button className="bg-brand-green text-white hover:bg-[#004020] transition-colors">
+          <Button 
+            className="bg-brand-green text-white hover:bg-[#004020] transition-colors"
+            aria-label="Get Started with Queep"
+          >
             Get Started
           </Button>
         </Link>

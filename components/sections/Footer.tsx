@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -8,7 +9,16 @@ export function Footer() {
           {/* Brand Section */}
           <div className="space-y-8 mb-12 xl:mb-0">
             <div>
-              <h3 className="text-2xl font-bold text-brand-text mb-4">Queep</h3>
+              <div className="flex items-center gap-3 mb-4">
+                <Image
+                  src="/logo.png"
+                  alt="Queep Logo"
+                  width={40}
+                  height={40}
+                  className="h-10 w-10 object-contain"
+                />
+                <h3 className="text-2xl font-bold text-brand-text">Queep</h3>
+              </div>
               <p className="text-sm leading-6 text-brand-text/70 max-w-xs">
                 An AI notetaker that pops out whenever you need. Capture, organize, and find your notes effortlessly.
               </p>

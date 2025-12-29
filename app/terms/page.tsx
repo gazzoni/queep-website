@@ -1,6 +1,26 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { Header } from "@/components/sections/Header";
 import { Footer } from "@/components/sections/Footer";
+
+export const metadata: Metadata = {
+  title: "Terms of Service",
+  description: "Queep's Terms of Service outline the license grant, user obligations, payment terms, AI features limitations, and legal agreements for using our AI-powered notetaker desktop application.",
+  openGraph: {
+    title: "Terms of Service | Queep",
+    description: "Queep's Terms of Service outline the license grant, user obligations, payment terms, and legal agreements for using our AI-powered notetaker.",
+    url: "/terms",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Terms of Service | Queep",
+    description: "Queep's Terms of Service outline the license grant, user obligations, and legal agreements.",
+  },
+  alternates: {
+    canonical: "/terms",
+  },
+};
 
 export default function TermsPage() {
   return (

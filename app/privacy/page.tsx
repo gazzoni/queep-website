@@ -1,6 +1,26 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { Header } from "@/components/sections/Header";
 import { Footer } from "@/components/sections/Footer";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description: "Queep's Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our AI-powered notetaker desktop application. Learn about data storage, AI processing, and your privacy rights.",
+  openGraph: {
+    title: "Privacy Policy | Queep",
+    description: "Queep's Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our AI-powered notetaker desktop application.",
+    url: "/privacy",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Privacy Policy | Queep",
+    description: "Queep's Privacy Policy explains how we collect, use, and safeguard your information.",
+  },
+  alternates: {
+    canonical: "/privacy",
+  },
+};
 
 export default function PrivacyPage() {
   return (
