@@ -90,9 +90,6 @@ export const metadata: Metadata = {
     initialScale: 1,
     maximumScale: 5,
   },
-  alternates: {
-    canonical: "/",
-  },
   category: "productivity",
 };
 

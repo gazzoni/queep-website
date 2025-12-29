@@ -43,7 +43,7 @@ export default function PrivacyPage() {
               <section className="bg-brand-card p-6 rounded-lg border border-brand-gray">
                 <h2 className="text-2xl font-semibold text-brand-text mb-4">1. Introduction</h2>
                 <p className="mb-4">
-                  Queep ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our desktop application and related services.
+                  Queep (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our desktop application and related services.
                 </p>
               </section>
 
@@ -137,7 +137,7 @@ export default function PrivacyPage() {
               </section>
 
               <section className="bg-brand-card p-6 rounded-lg border border-brand-gray">
-                <h2 className="text-2xl font-semibold text-brand-text mb-4">10. Children's Privacy</h2>
+                <h2 className="text-2xl font-semibold text-brand-text mb-4">10. Children&apos;s Privacy</h2>
                 <p className="mb-4">
                   Our services are not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe we have collected such information, please contact us immediately.
                 </p>
@@ -146,7 +146,7 @@ export default function PrivacyPage() {
               <section className="bg-brand-card p-6 rounded-lg border border-brand-gray">
                 <h2 className="text-2xl font-semibold text-brand-text mb-4">11. Changes to This Privacy Policy</h2>
                 <p className="mb-4">
-                  We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date. You are advised to review this Privacy Policy periodically for any changes.
+                  We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the &quot;Last updated&quot; date. You are advised to review this Privacy Policy periodically for any changes.
                 </p>
               </section>
 

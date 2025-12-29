@@ -43,7 +43,7 @@ export default function TermsPage() {
               <section className="bg-brand-card p-6 rounded-lg border border-brand-gray">
                 <h2 className="text-2xl font-semibold text-brand-text mb-4">1. Agreement to Terms</h2>
                 <p className="mb-4">
-                  By accessing or using Queep ("the Service"), you agree to be bound by these Terms of Service ("Terms"). If you disagree with any part of these terms, then you may not access the Service.
+                  By accessing or using Queep (&quot;the Service&quot;), you agree to be bound by these Terms of Service (&quot;Terms&quot;). If you disagree with any part of these terms, then you may not access the Service.
                 </p>
               </section>
 
@@ -111,7 +111,7 @@ export default function TermsPage() {
               <section className="bg-brand-card p-6 rounded-lg border border-brand-gray">
                 <h2 className="text-2xl font-semibold text-brand-text mb-4">7. AI Features and Limitations</h2>
                 <p className="mb-4">
-                  Our AI-powered features, including note organization, task generation, and search, are provided "as is" and may not always be accurate or complete. You are responsible for reviewing and verifying any AI-generated content.
+                  Our AI-powered features, including note organization, task generation, and search, are provided &quot;as is&quot; and may not always be accurate or complete. You are responsible for reviewing and verifying any AI-generated content.
                 </p>
               </section>
 
@@ -135,7 +135,7 @@ export default function TermsPage() {
               <section className="bg-brand-card p-6 rounded-lg border border-brand-gray">
                 <h2 className="text-2xl font-semibold text-brand-text mb-4">10. Disclaimer of Warranties</h2>
                 <p className="mb-4">
-                  THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.
+                  THE SERVICE IS PROVIDED &quot;AS IS&quot; AND &quot;AS AVAILABLE&quot; WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.
                 </p>
               </section>
 
